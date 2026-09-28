@@ -7,7 +7,6 @@ A small knowledge-distillation experiment for a medical language model. The proj
 - `Disiliation_teacher.ipynb`: generates `teacher_logits.pt` from the first 100 training examples.
 - `Disiliation-student.ipynb`: trains the LoRA adapter, runs generation, and evaluates 50 validation examples.
 - `distilled_medical_student/`: saved LoRA adapter for `meta-llama/Llama-3.2-1B-Instruct`.
-- `teacher_logits.pt`: generated locally by the teacher notebook and ignored by Git.
 
 ## Requirements
 
