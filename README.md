@@ -20,25 +20,6 @@ different teammate.
 
 Each folder has its own README with that technique's method, results and how to run it.
 
-## Results comparison
-
-| Technique | Baseline perplexity | Final perplexity | Change | Trainable params |
-|---|---|---|---|---|
-| Freezing | 8.66 | 7.78 | **−10.2%** | 436M / 4.76B (9.17%) |
-| Distillation (student: Llama-3.2-1B) | TBD — no baseline measured yet | 22.54 (val. perplexity) | TBD | ~852K (0.069%) |
-| Fine-tuning (QLoRA) | — (different dataset/task, see note) | — | — | ~42M (~0.5%) |
-
-**Note on comparability:**
-- Freezing and distillation both run on `Saminx22/medical_data_for_slm`, but train different
-  model sizes (8B vs. 1B) — the *absolute* perplexity numbers are not directly comparable to
-  each other, only each technique's improvement over its own baseline.
-- The distillation notebooks don't currently measure a pre-distillation baseline, so its
-  relative improvement isn't established yet.
-- The fine-tuning folder trains on a different dataset (bank KYC compliance Q&A, not the shared
-  medical dataset) with its own task-specific metrics (ROUGE-L, semantic similarity, keyword
-  recall — see [`fine_tuning/README.md`](fine_tuning/README.md)), so it isn't shown on the
-  perplexity table above.
-
 ## Reproducibility
 
 Each technique folder pins its own dependencies (`requirements.txt`) and documents how to run
