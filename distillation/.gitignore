@@ -1,0 +1,18 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local credentials and Hugging Face caches
+.env
+.env.*
+.cache/
+.huggingface/
+
+# Generated distillation cache
+teacher_logits.pt
+
+# Generated notebook/runtime files
+*.log

@@ -1,0 +1,24 @@
+# Model weights and checkpoints (per the project brief: don't attach models to the project)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+*/outputs/
+freeze_experiment/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Credentials and local caches
+.env
+.env.*
+.cache/
+.huggingface/
+wandb/
+*.log

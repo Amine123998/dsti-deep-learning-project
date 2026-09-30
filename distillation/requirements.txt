@@ -1,0 +1,6 @@
+transformers==4.57.1
+peft==0.17.1
+accelerate
+bitsandbytes
+datasets
+huggingface_hub
