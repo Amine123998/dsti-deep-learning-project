@@ -1,0 +1,3 @@
+stage,eval_loss,perplexity,perplexity_change_%
+Baseline (frozen, no training),2.159097,8.663314,0.000000
+After freezing (last 2 layers trained),2.051770,7.781663,-10.176832

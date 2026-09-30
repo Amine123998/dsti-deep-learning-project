@@ -1,12 +1,16 @@
-# Local environments
+# Model weights and checkpoints (per the project brief: don't attach models to the project)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+checkpoints/
+*/outputs/
+freeze_experiment/
+
+# Python environments and caches
 .venv/
 venv/
-
-# Project-local generated files
-Distillation/teacher_logits.pt
-Distillation/.venv/
-
-# Python caches
 __pycache__/
 *.py[cod]
 .ipynb_checkpoints/
@@ -16,4 +20,5 @@ __pycache__/
 .env.*
 .cache/
 .huggingface/
+wandb/
 *.log
